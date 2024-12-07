@@ -17,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { io } from "socket.io-client";
 import { useMessageNotification } from "../../contexts/messageNotification";
 
-const socket = io("https://socialise-server-gu5o.onrender.com/");
+const socket = io("https://linkup-bww4.onrender.com/");
 
 const Chatbox = ({ messageReceive }) => {
   const [selectChat, setSelectChat] = useState({
@@ -51,7 +51,7 @@ const Chatbox = ({ messageReceive }) => {
     try {
       const token = localStorage.getItem("token");
       const block = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/blockUser/${selectChat._id}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/blockUser/${selectChat._id}`,
         {},
         {
           headers: {
@@ -75,7 +75,7 @@ const Chatbox = ({ messageReceive }) => {
     try {
       const token = localStorage.getItem("token");
       const unblock = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/unblockUser/${selectChat._id}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/unblockUser/${selectChat._id}`,
         {},
         {
           headers: {
@@ -105,7 +105,7 @@ const Chatbox = ({ messageReceive }) => {
         try {
           const token = localStorage.getItem("token");
           const del = axios.delete(
-            `https://socialise-server-gu5o.onrender.com/api/v1/messageNotification/${selectChat._id}`,
+            `https://linkup-bww4.onrender.com/api/v1/messageNotification/${selectChat._id}`,
             {
               headers: {
                 authorisation: `Bearer ${token}`,
@@ -133,7 +133,7 @@ const Chatbox = ({ messageReceive }) => {
     const token = localStorage.getItem("token");
     try {
       const mess = await axios.get(
-        `https://socialise-server-gu5o.onrender.com/api/v1/messages/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/messages/${id}`,
         {
           headers: {
             authorisation: `Bearer ${token}`,
@@ -152,7 +152,7 @@ const Chatbox = ({ messageReceive }) => {
     const token = localStorage.getItem("token");
     try {
       const del = axios.delete(
-        `https://socialise-server-gu5o.onrender.com/api/v1/messageNotification/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/messageNotification/${id}`,
         {
           headers: {
             authorisation: `Bearer ${token}`,
@@ -177,7 +177,7 @@ const Chatbox = ({ messageReceive }) => {
       setDisabled(true);
       try {
         const mess = await axios.post(
-          `https://socialise-server-gu5o.onrender.com/api/v1/messages/${selectChat._id}`,
+          `https://linkup-bww4.onrender.com/api/v1/messages/${selectChat._id}`,
           data,
           {
             headers: {
@@ -225,7 +225,7 @@ const Chatbox = ({ messageReceive }) => {
     const token = localStorage.getItem("token");
     try {
       const mess = await axios.delete(
-        `https://socialise-server-gu5o.onrender.com/api/v1/messages/delete/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/messages/delete/${id}`,
         {
           headers: {
             authorisation: `Bearer ${token}`,

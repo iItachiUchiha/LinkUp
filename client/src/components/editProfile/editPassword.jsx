@@ -48,7 +48,7 @@ const ChangeDetails = ({ setChange }) => {
       const tok = localStorage.getItem("token");
       axios.defaults.headers.common["authorisation"] = `Bearer ${tok}`;
       let dat = await axios.put(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/updatePassword",
+        "https://linkup-bww4.onrender.com/api/v1/user/updatePassword",
         d
       );
       console.log(dat);

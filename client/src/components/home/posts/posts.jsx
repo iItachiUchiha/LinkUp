@@ -13,7 +13,7 @@ const Posts = () => {
       try {
         console.log(token);
         const posts1 = await axios.get(
-          "https://socialise-server-gu5o.onrender.com/api/v1/all_posts/every",
+          "https://linkup-bww4.onrender.com/api/v1/all_posts/every",
           {
             headers: {
               "Content-Type": "application/json",

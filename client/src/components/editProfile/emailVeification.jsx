@@ -14,7 +14,7 @@ const EditEmailVerification = () => {
     const setToken = async () => {
       try {
         const data = await axios.get(
-          `https://socialise-server-gu5o.onrender.com/api/v1/user/verify/${token}`
+          `https://linkup-bww4.onrender.com/api/v1/user/verify/${token}`
         );
         if (data.data.token) {
           localStorage.setItem("token", data.data.token);
@@ -30,7 +30,7 @@ const EditEmailVerification = () => {
       try {
         axios.defaults.headers.common["authorisation"] = `Bearer ${tok}`;
         user1 = await axios.get(
-          "https://socialise-server-gu5o.onrender.com/api/v1/user"
+          "https://linkup-bww4.onrender.com/api/v1/user"
         );
         console.log(user1);
         if (user1.data.data.user) {

@@ -39,7 +39,7 @@ const uploadPhoto = () => {
         formData.append("files", file);
         const token = localStorage.getItem("token");
         const user = await axios.put(
-          "https://socialise-server-gu5o.onrender.com/api/v1/user/uploadProfilePic",
+          "https://linkup-bww4.onrender.com/api/v1/user/uploadProfilePic",
           formData,
           {
             headers: {

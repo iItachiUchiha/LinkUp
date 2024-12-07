@@ -28,7 +28,7 @@ const Description = () => {
       const token = localStorage.getItem("token");
       axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
       await axios.put(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/addBio",
+        "https://linkup-bww4.onrender.com/api/v1/user/addBio",
         {
           bio: description,
         }

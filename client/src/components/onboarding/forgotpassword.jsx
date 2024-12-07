@@ -28,7 +28,7 @@ const ForgotPassword = () => {
     setDisabled(true);
     try {
       const response = await axios.put(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/generateResetToken",
+        "https://linkup-bww4.onrender.com/api/v1/user/generateResetToken",
         data
       );
       console.log(response);

@@ -17,7 +17,7 @@ const Comments = ({ comments, id, commentsState }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/posts/comment/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/posts/comment/${id}`,
         {
           comment: comments1,
         },
@@ -47,7 +47,7 @@ const Comments = ({ comments, id, commentsState }) => {
   const deleteHandler = async (commentId) => {
     try {
       const res = await axios.delete(
-        `https://socialise-server-gu5o.onrender.com/api/v1/posts/comment/${id}/${commentId}`,
+        `https://linkup-bww4.onrender.com/api/v1/posts/comment/${id}/${commentId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const Comments = ({ comments, id, commentsState }) => {
     const token = localStorage.getItem("token");
     try {
       const res = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/posts/comment/${id}/${edit.id}`,
+        `https://linkup-bww4.onrender.com/api/v1/posts/comment/${id}/${edit.id}`,
         {
           comment: edit.comment,
         },

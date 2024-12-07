@@ -92,7 +92,7 @@ const Login = () => {
       if (token) {
         axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
         user1 = await axios.get(
-          "https://socialise-server-gu5o.onrender.com/api/v1/user"
+          "https://linkup-bww4.onrender.com/api/v1/user"
         );
         // console.log(user1)
         if (user1.data.data.user) {
@@ -115,7 +115,7 @@ const Login = () => {
     console.log(data);
     try {
       let tok = await axios.post(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/login",
+        "https://linkup-bww4.onrender.com/api/v1/user/login",
         data
       );
 
@@ -149,7 +149,7 @@ const Login = () => {
     try {
       setLoading1(true);
       const u = await axios.put(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/resendEmailVerification",
+        "https://linkup-bww4.onrender.com/api/v1/user/resendEmailVerification",
         { email: email }
       );
       console.log(u);

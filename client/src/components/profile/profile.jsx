@@ -33,7 +33,7 @@ const Profile = () => {
       let user1, posts1;
       try {
         user1 = await axios.get(
-          `https://socialise-server-gu5o.onrender.com/api/v1/user/getProfile/${id}`,
+          `https://linkup-bww4.onrender.com/api/v1/user/getProfile/${id}`,
           {
             headers: {
               authorisation: `Bearer ${token}`,
@@ -43,7 +43,7 @@ const Profile = () => {
         setUser(user1.data.data);
         console.log(user1);
         posts1 = await axios.get(
-          `https://socialise-server-gu5o.onrender.com/api/v1/all_posts/profile/${id}`,
+          `https://linkup-bww4.onrender.com/api/v1/all_posts/profile/${id}`,
           {
             headers: {
               authorisation: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const Profile = () => {
     const getFollows = async () => {
       try {
         let follows = await axios.get(
-          `https://socialise-server-gu5o.onrender.com/api/v1/user/getFollows/${id}`,
+          `https://linkup-bww4.onrender.com/api/v1/user/getFollows/${id}`,
           {
             headers: {
               authorisation: `Bearer ${token}`,

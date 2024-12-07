@@ -62,7 +62,7 @@ const Followers = ({ user, followers }) => {
     const token = localStorage.getItem("token");
     try {
       const res = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/block/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/block/${id}`,
         {},
         { headers: { authorisation: `Bearer ${token}` } }
       );

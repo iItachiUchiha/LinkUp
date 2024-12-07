@@ -174,7 +174,7 @@ const MobileDrawer = () => {
     try {
       const token = localStorage.getItem("token");
       const accept = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/notifications/accept/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/notifications/accept/${id}`,
         {
           headers: {
             authorisation: `Bearer ${token}`,
@@ -203,7 +203,7 @@ const MobileDrawer = () => {
     try {
       const token = localStorage.getItem("token");
       const accept = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/notifications/reject/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/notifications/reject/${id}`,
         {
           headers: {
             authorisation: `Bearer ${token}`,

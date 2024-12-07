@@ -26,7 +26,7 @@ const Background = ({ user, posts, followers, following }) => {
     try {
       const token = localStorage.getItem("token");
       const notificatio = await axios.post(
-        `https://socialise-server-gu5o.onrender.com/api/v1/notifications`,
+        `https://linkup-bww4.onrender.com/api/v1/notifications`,
         { user: user._id },
         { headers: { authorisation: `Bearer ${token}` } }
       );
@@ -47,7 +47,7 @@ const Background = ({ user, posts, followers, following }) => {
     try {
       const token = localStorage.getItem("token");
       const unfollow = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/unfollow/${user._id}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/unfollow/${user._id}`,
         { headers: { authorisation: `Bearer ${token}` } }
       );
       console.log(unfollow);
@@ -66,7 +66,7 @@ const Background = ({ user, posts, followers, following }) => {
     try {
       const token = localStorage.getItem("token");
       const unrequest = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/notifications/delete/${user._id}`,
+        `https://linkup-bww4.onrender.com/api/v1/notifications/delete/${user._id}`,
         { headers: { authorisation: `Bearer ${token}` } }
       );
       console.log(unrequest);

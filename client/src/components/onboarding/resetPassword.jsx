@@ -37,7 +37,7 @@ const ResetPassword = () => {
     setDisabled(true);
     try {
       const dat = await axios.post(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/resetPassword/${token}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/resetPassword/${token}`,
         data
       );
       if (dat.status === 200) {

@@ -56,7 +56,7 @@ const Following = ({ user, following, setUser }) => {
     const token = localStorage.getItem("token");
     try {
       const res = await axios.put(
-        `https://socialise-server-gu5o.onrender.com/api/v1/user/unfollow/${id}`,
+        `https://linkup-bww4.onrender.com/api/v1/user/unfollow/${id}`,
         {},
         { headers: { authorisation: `Bearer ${token}` } }
       );

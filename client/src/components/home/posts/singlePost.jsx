@@ -48,7 +48,7 @@ const SinglePost = ({ post }) => {
       if (isLiked) {
         const token = localStorage.getItem("token");
         const res = await axios.put(
-          `https://socialise-server-gu5o.onrender.com/api/v1/posts/unlike/${post.id}`,
+          `https://linkup-bww4.onrender.com/api/v1/posts/unlike/${post.id}`,
           {},
           {
             headers: {
@@ -62,7 +62,7 @@ const SinglePost = ({ post }) => {
       } else {
         const token = localStorage.getItem("token");
         const res = await axios.put(
-          `https://socialise-server-gu5o.onrender.com/api/v1/posts/like/${post.id}`,
+          `https://linkup-bww4.onrender.com/api/v1/posts/like/${post.id}`,
           {},
           {
             headers: {

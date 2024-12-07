@@ -35,7 +35,7 @@ import WrongUrl from "./components/onboarding/wrongurl";
 
 export const allUsers = createContext();
 export const allNotifications = createContext();
-const socket = io("https://socialise-server-gu5o.onrender.com/");
+const socket = io("https://linkup-bww4.onrender.com/");
 
 function App() {
   const { messageNotification, setMessageNotification } =
@@ -60,7 +60,7 @@ function App() {
         if (token) {
           axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
           const user1 = await axios.get(
-            "https://socialise-server-gu5o.onrender.com/api/v1/user"
+            "https://linkup-bww4.onrender.com/api/v1/user"
           );
 
           console.log(user1);
@@ -86,7 +86,7 @@ function App() {
         if (token) {
           axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
           const notificationOfMessages = await axios.get(
-            "https://socialise-server-gu5o.onrender.com/api/v1/messageNotification"
+            "https://linkup-bww4.onrender.com/api/v1/messageNotification"
           );
           console.log(notificationOfMessages.data.data);
           setMessageNotification(notificationOfMessages.data.data);
@@ -106,7 +106,7 @@ function App() {
         if (token) {
           axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
           const notification = await axios.get(
-            "https://socialise-server-gu5o.onrender.com/api/v1/notifications"
+            "https://linkup-bww4.onrender.com/api/v1/notifications"
           );
           console.log(notification.data.data);
           setNotifications(notification.data.data);
@@ -125,7 +125,7 @@ function App() {
         if (token) {
           axios.defaults.headers.common["authorisation"] = `Bearer ${token}`;
           const users = await axios.get(
-            "https://socialise-server-gu5o.onrender.com/api/v1/user/getAllUsers"
+            "https://linkup-bww4.onrender.com/api/v1/user/getAllUsers"
           );
           console.log(users.data.data, "users");
           setUsers(users.data.data);

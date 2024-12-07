@@ -50,7 +50,7 @@ const ChangeDetails = ({ setChange }) => {
     }
     try {
       let dat = await axios.put(
-        "https://socialise-server-gu5o.onrender.com/api/v1/user/update",
+        "https://linkup-bww4.onrender.com/api/v1/user/update",
         data
       );
       setDisabled(false);
