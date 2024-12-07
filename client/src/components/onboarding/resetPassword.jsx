@@ -63,7 +63,7 @@ const ResetPassword = () => {
   return (
     <>
       <div className={classes.register}>
-        <h1 className={classes.heading}>Socialise</h1>
+        <h1 className={classes.heading}>LinkUp</h1>
         <form className={classes.form} onSubmit={handleSubmit(submitHandler)}>
           <input
             placeholder="Password"

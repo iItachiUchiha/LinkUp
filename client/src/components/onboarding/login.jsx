@@ -185,7 +185,7 @@ const Login = () => {
   return (
     <>
       <div className={classes.login}>
-        <h1 className={classes.heading}>Socialise</h1>
+        <h1 className={classes.heading}>LinkUp</h1>
         <form className={classes.form} onSubmit={handleSubmit(submitHandler)}>
           <input
             placeholder="Email"

@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className={classes.header}>
             <div className={classes.heading}>
-                <h1>Socialise</h1>
+                <h1>LinkUp</h1>
             </div>
             <div className={classes.input}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} className={classes.search}></FontAwesomeIcon>

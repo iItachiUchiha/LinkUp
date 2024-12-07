@@ -124,7 +124,7 @@ const Description = () => {
 
   return (
     <Box className={classes.description}>
-      {/* <h1 className={classes.heading}>Socialise</h1>
+      {/* <h1 className={classes.heading}>LinkUp</h1>
        */}
       <Dialog open={true} PaperProps={{ sx: dialogStyle }}>
         <Component>
